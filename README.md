@@ -19,7 +19,7 @@ Ensure you have Docker and Docker Compose installed. Point your domain (e.g., `*
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/tunly.git
+git clone https://github.com/spidervirus/tunly.git
 cd tunly
 
 # Set your domain and token
