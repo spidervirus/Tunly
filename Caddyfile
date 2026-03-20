@@ -1,0 +1,11 @@
+{
+    email {$EMAIL:admin@example.com}
+}
+
+# The main domain and wildcard tunnels
+{$TUNLY_DOMAIN}, *.{$TUNLY_DOMAIN} {
+    # For local dev: use self-signed certs
+    # For production: remove this or replace with your email
+    tls internal
+    reverse_proxy tunly-server:3010
+}
